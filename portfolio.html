@@ -8,86 +8,92 @@
   <title>Jason's Profile</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-  <style>
-    body {
-      background-image: url("images/circuit.png");
-    }
-
-    html,
-    body {
-      height: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="d-flex flex-column h-100">
   <main role="main" class="flex-shrink-0">
 
-    <nav class="navbar navbar-light" style="background-color: #ffffff;">
+    <nav class="navbar navbar-light header">
       <div class="container">
-        <a class="navbar-brand" style="background-color: #4aaaa5; color: #ffffff; padding: 20px; font-size: 50px;"
-          href="#">Jason Blake</a>
-        <div class="navbar-nav" style="flex-direction: row;">
-          <a class="nav-item nav-link" style="border-right: 2px solid #cccccc; padding-right: 10px; padding-left: 10px;"
-            href="index.html">About Me</a>
-          <a class="nav-item nav-link active"
-            style="border-right: 2px solid #cccccc; padding-right: 10px; padding-left: 10px;" href="#">Portfolio<span
-              class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" style="padding-left: 10px;" href="contact.html">Contact Me</a>
+        <a class="navbar-brand" href="#">
+          <h1 class="myName">Jason Blake</h1>
+        </a>
+        <div class="navbar-nav">
+          <ul class="nav">
+            <li>
+              <a class="nav-item nav-link" href="index.html">About Me</a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="#"> | </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link active" href="#">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="#"> | </a>
+            </li>
+            <li>
+              <a class="nav-item nav-link" href="contact.html">Contact Me</a>
+            </li>
+          </ul>
         </div>
-      </div>
       </div>
     </nav>
 
-    <div class="container" style="background-color: #ffffff; margin-top: 20px;">
-
-      <div class="row" style="border-bottom: 2px solid #cccccc; padding-bottom: 20px; margin-bottom: 20px;">
-        <h2 style="color: #4aaaa5; font-size: 40px; margin-left: 20px; margin-top: 20px;">
-          Portfolio</h2>
-      </div>
-
+    <div class="container">
 
       <div class="row">
+        <div class="col-8">
 
-        <div class="card text-white border-0">
-          <img src="images/Aphex-Twin.jpg" class="card-img float-left img-fluid" alt="Aphex-Twin"
-            style="height: 350px; width: 350px; margin: 20px;">
-          <div class="card-img-overlay" style="margin-top: 300px;">
-            <h3 style="background-color: #4aaaa5; width: 350px; text-align: center;">Aphex Twin</h3>
+          <div class="row contentHeader">
+            <h2>Portfolio</h2>
           </div>
-        </div>
-        <div class="card text-white border-0">
-          <img src="images/Bridge-To-Nowhere.jpg" class="card-img float-left img-fluid" alt="Bridge-To-Nowhere"
-            style="height: 350px; width: 350px; margin: 20px;">
-          <div class="card-img-overlay" style="margin-top: 300px;">
-            <h3 style="background-color: #4aaaa5; width: 350px; text-align: center;">Bridge To Nowhere</h3>
-          </div>
-        </div>
-        <div class="card text-white border-0">
-          <img src="images/Fear-DCV.jpg" class="card-img float-left img-fluid" alt="Fear-DCV"
-            style="height: 350px; width: 350px; margin: 20px;">
-          <div class="card-img-overlay" style="margin-top: 300px;">
-            <h3 style="background-color: #4aaaa5; width: 350px; text-align: center;">Fear DCV</h3>
-          </div>
-        </div>
-        <div class="card text-white border-0">
-          <img src="images/Third-Eye-Tears-Of-Joy.jpg" class="card-img float-left img-fluid"
-            alt="Third-Eye-Tears-Of-Joy" style="height: 350px; width: 350px; margin: 20px;">
-          <div class="card-img-overlay" style="margin-top: 300px;">
-            <h3 style="background-color: #4aaaa5; width: 350px; text-align: center;">Third Eye Tears Of Joy</h3>
-          </div>
-        </div>
-        <div class="card text-white border-0">
-          <img src="images/LA-Skyline.jpg" class="card-img float-left img-fluid" alt="LA-Skyline"
-            style="height: 350px; width: 350px; margin: 20px;">
-          <div class="card-img-overlay" style="margin-top: 300px;">
-            <h3 style="background-color: #4aaaa5; width: 350px; text-align: center;">LA Skyline</h3>
-          </div>
-        </div>
 
+
+          <div class="row myContent">
+
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <img src="images/Aphex-Twin.jpg" class="card-img float-left img-fluid portfolioImage" alt="Aphex-Twin">
+                <h3 class="card-img-overlay description">Aphex Twin</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <img src="images/Bridge-To-Nowhere.jpg" class="card-img float-left img-fluid portfolioImage"
+                  alt="Bridge-To-Nowhere">
+                <h3 class="card-img-overlay description">Bridge</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <img src="images/Fear-DCV.jpg" class="card-img float-left img-fluid portfolioImage" alt="Fear-DCV">
+                <h3 class="card-img-overlay description">Fear DCV</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4">
+                <img src="images/Third-Eye-Tears-Of-Joy.jpg" class="card-img float-left img-fluid portfolioImage"
+                  alt="Third-Eye-Tears-Of-Joy">
+                <h3 class="card-img-overlay description">Tears Of Joy</h3>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <div class="card mb-4">
+                <img src="images/LA-Skyline.jpg" class="card-img float-left img-fluid portfolioImage" alt="LA-Skyline">
+                <h3 class="card-img-overlay description">LA Skyline</h3>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
-
-    </div>
 
   </main>
 
